@@ -391,3 +391,81 @@ color:#666;
 
 }
 
+/* ==================================
+STATISTICS
+================================== */
+
+.stats-section{
+
+background:#0d2b52;
+
+padding:90px 0;
+
+color:#fff;
+
+}
+
+.stat-box{
+
+padding:25px;
+
+}
+
+.stat-box h2{
+
+font-size:48px;
+
+font-weight:700;
+
+color:#f4b400;
+
+}
+
+.stat-box p{
+
+font-size:18px;
+
+}
+
+/* ==================================
+FOUNDER
+================================== */
+
+.founder-section{
+
+background:#ffffff;
+
+padding:100px 0;
+
+}
+
+.founder-section h2{
+
+color:#0d2b52;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.founder-section h4{
+
+margin-bottom:10px;
+
+}
+
+.founder-section img{
+
+border:8px solid #f4b400;
+
+}
+
+.founder-section p{
+
+font-size:17px;
+
+color:#555;
+
+}
+
