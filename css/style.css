@@ -33,7 +33,7 @@ body{
     background:rgba(13,43,82,.95);
     backdrop-filter:blur(8px);
     transition:.4s ease;
-    padding:0;
+    padding:padding:8px 0;;
 }
 
 .navbar-brand{
