@@ -273,3 +273,121 @@ font-size:15px;
 
 }
 
+/* ==================================
+INDUSTRIES
+================================== */
+
+.industries-home{
+
+background:#ffffff;
+
+padding:100px 0;
+
+}
+
+.industry-card{
+
+background:#f7f9fc;
+
+padding:35px;
+
+text-align:center;
+
+border-radius:15px;
+
+transition:.35s;
+
+height:100%;
+
+}
+
+.industry-card:hover{
+
+background:#0d2b52;
+
+color:#fff;
+
+transform:translateY(-8px);
+
+}
+
+.industry-card i{
+
+font-size:40px;
+
+margin-bottom:20px;
+
+color:#f4b400;
+
+}
+
+.industry-card:hover i{
+
+color:#fff;
+
+}
+
+/* ==================================
+WHY US
+================================== */
+
+.why-us{
+
+background:#eef4fa;
+
+padding:100px 0;
+
+}
+
+.why-list{
+
+list-style:none;
+
+padding:0;
+
+}
+
+.why-list li{
+
+margin-bottom:22px;
+
+font-size:18px;
+
+}
+
+.why-list i{
+
+color:#f4b400;
+
+margin-right:10px;
+
+}
+
+.why-box{
+
+background:#fff;
+
+padding:45px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.why-box h3{
+
+color:#0d2b52;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+}
+
+.why-box p{
+
+color:#666;
+
+}
+
