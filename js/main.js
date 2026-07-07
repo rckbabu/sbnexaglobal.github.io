@@ -1,16 +1,16 @@
 /**
- * SB Nexa Global - Core UI Script interactions
+ * Dynamic light navbar scroll effects
  */
 window.addEventListener("scroll", function() {
     const navbar = document.querySelector(".navbar");
     
-    if (window.scrollY > 60) {
-        navbar.style.background = "#081f3f";
+    if (window.scrollY > 50) {
+        navbar.style.boxShadow = "0 10px 30px rgba(13, 43, 82, 0.08)";
         navbar.style.padding = "10px 0";
-        navbar.style.boxShadow = "0 10px 30px rgba(0, 0, 0, 0.25)";
+        navbar.style.background = "#ffffff";
     } else {
-        navbar.style.background = "rgba(13, 43, 82, 0.95)";
-        navbar.style.padding = "15px 0";
         navbar.style.boxShadow = "none";
+        navbar.style.padding = "15px 0";
+        navbar.style.background = "rgba(255, 255, 255, 0.95)";
     }
 });
