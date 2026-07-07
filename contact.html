@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/style.css">
     
     <style>
-        /* Extra custom micro-styles for contact page layouts */
         .contact-hero {
             padding: 140px 0 60px 0;
             background: linear-gradient(135deg, #f8fafc 0%, #eef2f7 100%);
@@ -25,72 +24,53 @@
         }
         .info-card {
             background: #f8fafc;
-            padding: 30px;
-            border-radius: 12px;
+            padding: 35px;
+            border-radius: 14px;
             border: 1px solid rgba(0,0,0,0.04);
             margin-bottom: 24px;
             display: flex;
-            align-items: flex-start;
+            align-items: center;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-3px);
+            border-color: #f4b400;
         }
         .info-card .icon-box {
-            width: 50px;
-            height: 50px;
-            background: rgba(244, 180, 0, 0.1);
+            width: 60px;
+            height: 60px;
+            background: rgba(13, 43, 82, 0.05);
             border-radius: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 20px;
+            margin-right: 25px;
             flex-shrink: 0;
         }
         .info-card i {
-            font-size: 20px;
+            font-size: 24px;
             color: #0d2b52;
         }
         .info-card h5 {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
             color: #0d2b52;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
         }
         .info-card p, .info-card a {
             color: #64748b;
-            font-size: 14px;
+            font-size: 15px;
             text-decoration: none;
             margin: 0;
         }
         .info-card a:hover {
             color: #f4b400;
-        }
-        .form-box {
-            background: #ffffff;
-            padding: 45px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(13, 43, 82, 0.05);
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        .form-control, .form-select {
-            padding: 12px 18px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            font-size: 14px;
-            margin-bottom: 20px;
-        }
-        .form-control:focus, .form-select:focus {
-            border-color: #f4b400;
-            box-shadow: 0 0 0 3px rgba(244, 180, 0, 0.15);
-        }
-        .form-box label {
-            font-weight: 500;
-            font-size: 14px;
-            color: #0d2b52;
-            margin-bottom: 8px;
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">
@@ -114,7 +94,6 @@
         </div>
     </nav>
 
-    <!-- Header Hero banner area -->
     <section class="contact-hero">
         <div class="container">
             <span class="section-tagline">GET IN TOUCH</span>
@@ -123,20 +102,21 @@
         </div>
     </section>
 
-    <!-- Main Content Area -->
     <section class="contact-wrapper">
         <div class="container">
-            <div class="row g-5">
+            <div class="row justify-content-center">
                 
-                <!-- Left Hand Side: Corporate Details info boxes -->
-                <div class="col-lg-5">
-                    <h3 class="fw-bold mb-4" style="color: #0d2b52;">Corporate Information</h3>
-                    <p class="text-muted mb-4">Have an upcoming enterprise digital initiative or board advisory requirement? Reach out via our direct points of contact or fill out our project inquiry request form.</p>
+                <div class="col-lg-8 text-center mb-5">
+                    <h3 class="fw-bold mb-3" style="color: #0d2b52;">Corporate Channels</h3>
+                    <p class="text-muted">Have an upcoming enterprise digital initiative or board advisory requirement? Reach out directly via our verified communication networks below. Our executive team will respond promptly.</p>
+                </div>
+
+                <div class="col-lg-8">
                     
                     <div class="info-card">
                         <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
                         <div>
-                            <h5>Our Location</h5>
+                            <h5>Our Corporate Base</h5>
                             <p>Bengaluru, Karnataka, India</p>
                         </div>
                     </div>
@@ -144,7 +124,7 @@
                     <div class="info-card">
                         <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
                         <div>
-                            <h5>Email Address</h5>
+                            <h5>Direct Inquiry Email</h5>
                             <p><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
                         </div>
                     </div>
@@ -152,59 +132,17 @@
                     <div class="info-card">
                         <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
                         <div>
-                            <h5>Corporate LinkedIn</h5>
+                            <h5>Official Corporate LinkedIn</h5>
                             <p><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">linkedin.com/company/sbnexaglobal</a></p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Right Hand Side: Interactive Form Module -->
-                <div class="col-lg-7">
-                    <div class="form-box">
-                        <h3 class="fw-bold mb-4" style="color: #0d2b52;">Enterprise Inquiry Form</h3>
-                        <form action="#" method="POST">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="name">Full Name</label>
-                                    <input type="text" id="name" class="form-control" placeholder="Your Name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="email">Business Email</label>
-                                    <input type="email" id="email" class="form-control" placeholder="name@company.com" required>
-                                </div>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <label for="organization">Organization</label>
-                                    <input type="text" id="organization" class="form-control" placeholder="Company Name">
-                                </div>
-                                <div class="col-md-6">
-                                    <label for="interest">Area of Interest</label>
-                                    <select id="interest" class="form-select" required>
-                                        <option value="" selected disabled>Select an option</option>
-                                        <option value="IT Consulting">IT Consulting & Tech Strategy</option>
-                                        <option value="Digital Transformation">Digital Transformation</option>
-                                        <option value="Program Management">Program & PMO Governance</option>
-                                        <option value="Financial Services">Financial Services (BFSI)</option>
-                                        <option value="Quality Assurance">Quality & Delivery Excellence</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <label for="message">How can we assist you?</label>
-                            <textarea id="message" rows="5" class="form-control" placeholder="Provide a brief summary of your project objective..." required></textarea>
-
-                            <button type="submit" class="btn btn-primary w-100 mt-2 py-3">Submit Inquiry</button>
-                        </form>
-                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Footer System -->
     <footer class="footer">
         <div class="container">
             <div class="row g-4">
@@ -243,4 +181,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
