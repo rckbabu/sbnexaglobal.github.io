@@ -40,6 +40,7 @@ body {
     transition: all 0.3s ease;
     padding: 15px 0;
     border-bottom: 1px solid rgba(13, 43, 82, 0.08);
+    z-index: 1030;
 }
 
 .navbar-brand img {
@@ -98,7 +99,7 @@ body {
     overflow: hidden;
 }
 
-/* Creative geometric design accent replacing the dark stock box */
+/* Fixed variable glitch here */
 .hero::after {
     content: '';
     position: absolute;
@@ -106,7 +107,6 @@ body {
     top: -10%;
     width: 50vw;
     height: 120%;
-    background: var(--navy-light);
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
     background: linear-gradient(135deg, rgba(13, 43, 82, 0.05) 0%, rgba(8, 31, 63, 0.02) 100%);
     z-index: 1;
@@ -179,12 +179,12 @@ body {
 /* ==========================
    Sections Framework
 ========================== */
-.about-home {
+.about-home, .founder-section {
     padding: 100px 0;
     background: var(--bg-clean);
 }
 
-.services-home {
+.services-home, .why-us, .industries-home {
     padding: 100px 0;
     background: var(--bg-light-accent);
 }
@@ -202,9 +202,20 @@ body {
     font-size: 34px;
     font-weight: 700;
     color: var(--navy-text);
+    margin-bottom: 15px;
 }
 
-/* Custom cards with light, crisp style shadow effects */
+.section-desc p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.section-desc .lead-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--navy-text);
+}
+
+/* Custom cards with light style shadow effects */
 .service-card {
     background: #ffffff;
     padding: 40px 30px;
@@ -212,12 +223,106 @@ body {
     transition: all 0.3s ease;
     border: 1px solid rgba(0, 0, 0, 0.04);
     box-shadow: 0 4px 25px rgba(13, 43, 82, 0.03);
+    height: 100%;
 }
 
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 15px 35px rgba(13, 43, 82, 0.08);
     border-color: var(--primary-gold);
+}
+
+.service-card i {
+    font-size: 32px;
+    color: var(--primary-gold);
+    margin-bottom: 15px;
+}
+
+.service-card h4 {
+    color: var(--navy-text);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Industries display cards */
+.industry-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+.industry-card:hover {
+    background: var(--navy-text);
+    color: #ffffff !important;
+    transform: translateY(-4px);
+}
+.industry-card:hover h5, .industry-card:hover i {
+    color: #ffffff !important;
+}
+.industry-card i {
+    font-size: 30px;
+    color: var(--primary-gold);
+    margin-bottom: 12px;
+}
+.industry-card h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--navy-text);
+}
+
+/* Why choose us alignments */
+.why-list {
+    list-style: none;
+    padding: 0;
+}
+.why-list li {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.why-list i {
+    color: var(--primary-gold);
+    margin-right: 10px;
+}
+.why-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.02);
+    border-left: 4px solid var(--primary-gold);
+}
+
+/* Analytics Stats strip */
+.stats-section {
+    background: var(--navy-text);
+    padding: 60px 0;
+    color: #ffffff;
+}
+.stat-box h2 {
+    color: var(--primary-gold);
+    font-weight: 700;
+    font-size: 40px;
+}
+
+/* Founder layouts */
+.founder-img-wrapper img {
+    border-radius: 12px;
+}
+.founder-title {
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: var(--text-light);
+}
+
+/* Bottom CTA blocks */
+.contact-preview {
+    background: var(--navy-deep);
+    color: #ffffff;
+    padding: 80px 0;
+}
+.contact-preview h2 {
+    font-weight: 700;
 }
 
 /* ==========================
@@ -227,6 +332,7 @@ body {
     background: var(--navy-deep);
     color: #cbd5e1;
     padding: 70px 0 30px;
+    border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 .footer h5 {
@@ -235,11 +341,25 @@ body {
     margin-bottom: 20px;
 }
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin-bottom: 10px;
+}
+
 .footer-links a, .footer a {
     color: #cbd5e1;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .footer-links a:hover, .footer a:hover {
     color: var(--primary-gold);
 }
+
+.footer hr {
+    border-color: rgba(255,255,255,0.1);
+}
+
