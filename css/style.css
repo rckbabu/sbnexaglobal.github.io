@@ -1,5 +1,5 @@
 /* ==========================================
-   SB Nexa Global - Premium Premium Light Theme
+   SB Nexa Global - Clean, Ultra-Compact Theme
 ========================================== */
 
 :root {
@@ -27,24 +27,22 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-dark);
     background: var(--bg-clean);
-    line-height: 1.7;
+    line-height: 1.5;
 }
 
 /* ==========================
-   Navigation (Light & Clean)
+   Navigation (Tight & Integrated)
 ========================== */
 .navbar {
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    background: #ffffff;
     transition: all 0.3s ease;
-    padding: 15px 0;
+    padding: 8px 0;
     border-bottom: 1px solid rgba(13, 43, 82, 0.06);
     z-index: 1030;
 }
 
 .navbar-brand img {
-    height: 48px;
+    height: 42px;
     object-fit: contain;
 }
 
@@ -53,26 +51,26 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 5px;
 }
 
 .nav-link {
     color: var(--navy-text) !important;
     font-weight: 500;
-    font-size: 15px;
-    padding: 8px 16px !important;
+    font-size: 14px;
+    padding: 6px 12px !important;
     position: relative;
-    transition: color 0.25s ease;
 }
 
 .nav-link::after {
     content: '';
     position: absolute;
-    left: 16px;
+    left: 12px;
     bottom: 0;
     width: 0;
     height: 2px;
     background: var(--primary-gold);
-    transition: width 0.25s ease;
+    transition: width 0.2s ease;
 }
 
 .nav-link:hover, .nav-link.active {
@@ -80,29 +78,30 @@ body {
 }
 
 .nav-link:hover::after, .nav-link.active::after {
-    width: calc(100% - 32px);
+    width: calc(100% - 24px);
 }
 
 /* ==========================
-   Hero Section (Premium Fit)
+   Hero Section (Compact Viewport Fit)
 ========================== */
 .hero {
-    min-height: 85vh;
+    min-height: auto;
+    height: calc(100vh - 59px); /* Fits cleanly within the monitor screen */
     display: flex;
     align-items: center;
-    background: radial-gradient(circle at 80% 20%, rgba(244, 180, 0, 0.12) 0%, transparent 60%),
+    background: radial-gradient(circle at 85% 30%, rgba(244, 180, 0, 0.08) 0%, transparent 50%),
                 linear-gradient(135deg, #f8fafc 0%, #edf2f7 100%);
     color: var(--navy-text);
-    padding: 120px 0 60px 0;
-    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .hero-title {
-    font-size: 54px;
+    font-size: 44px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.2;
     color: var(--navy-text);
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     letter-spacing: -1px;
 }
 
@@ -111,18 +110,18 @@ body {
 }
 
 .hero-lead {
-    font-size: 19px;
+    font-size: 16px;
     color: var(--text-dark);
-    max-width: 620px;
-    margin-bottom: 35px;
-    line-height: 1.6;
+    max-width: 580px;
+    margin-bottom: 24px;
+    line-height: 1.5;
 }
 
 .hero-showcase {
     background: #ffffff;
-    padding: 40px;
-    border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(13, 43, 82, 0.05);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(13, 43, 82, 0.04);
     border: 1px solid rgba(13, 43, 82, 0.04);
     display: flex;
     align-items: center;
@@ -130,7 +129,7 @@ body {
 }
 
 .hero-showcase img {
-    max-height: 180px;
+    max-height: 140px;
     object-fit: contain;
 }
 
@@ -138,11 +137,11 @@ body {
    Buttons
 ========================== */
 .btn {
-    padding: 12px 34px;
+    padding: 10px 28px;
     border-radius: 50px;
     font-weight: 600;
-    font-size: 15px;
-    transition: all 0.25s ease;
+    font-size: 14px;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -153,8 +152,7 @@ body {
 
 .btn-primary:hover {
     background: var(--navy-deep);
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(13, 43, 82, 0.15);
+    transform: translateY(-1px);
 }
 
 .btn-outline-light {
@@ -166,79 +164,82 @@ body {
 .btn-outline-light:hover {
     background: var(--navy-text);
     color: #ffffff;
-    border-color: var(--navy-text);
-    transform: translateY(-2px);
 }
 
 /* ==========================
-   Sections Framework
+   Ultra-Compact Section Spacing
 ========================== */
 .about-home, .founder-section {
-    padding: 90px 0;
+    padding: 45px 0;
     background: var(--bg-clean);
 }
 
 .services-home, .why-us, .industries-home {
-    padding: 90px 0;
+    padding: 45px 0;
     background: var(--bg-light-accent);
 }
 
 .section-tagline {
     display: inline-block;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--primary-gold);
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    margin-bottom: 6px;
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--navy-text);
-    margin-bottom: 15px;
-}
-
-.service-card {
-    background: #ffffff;
-    padding: 35px 25px;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(0, 0, 0, 0.04);
-    box-shadow: 0 4px 20px rgba(13, 43, 82, 0.02);
-    height: 100%;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 15px 35px rgba(13, 43, 82, 0.08);
-    border-color: var(--primary-gold);
-}
-
-.service-card i {
-    font-size: 32px;
-    color: var(--primary-gold);
-    margin-bottom: 15px;
-}
-
-.service-card h4 {
-    color: var(--navy-text);
-    font-weight: 600;
     margin-bottom: 10px;
 }
 
 /* ==========================
-   Industries Grid Fixes
+   Card System Closures
 ========================== */
-.industry-card {
+.service-card {
     background: #ffffff;
-    padding: 30px 20px;
-    text-align: center;
-    border-radius: 16px;
+    padding: 24px 20px;
+    border-radius: 12px;
+    transition: all 0.25s ease;
     border: 1px solid rgba(13, 43, 82, 0.04);
     box-shadow: 0 4px 15px rgba(13, 43, 82, 0.01);
-    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-gold);
+    box-shadow: 0 10px 25px rgba(13, 43, 82, 0.06);
+}
+
+.service-card i {
+    font-size: 24px;
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+}
+
+.service-card h4 {
+    font-size: 16px;
+    color: var(--navy-text);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Industries Section Layout Fixes */
+.industry-card {
+    background: #ffffff;
+    padding: 20px 15px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid rgba(13, 43, 82, 0.04);
+    transition: all 0.25s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -247,108 +248,92 @@ body {
 }
 
 .industry-card i {
-    font-size: 28px;
+    font-size: 24px;
     color: var(--primary-gold);
-    margin-bottom: 14px;
-    transition: color 0.3s ease;
+    margin-bottom: 8px;
 }
 
 .industry-card h5 {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--navy-text);
-    margin-bottom: 0;
-    transition: color 0.3s ease;
+    margin: 0;
 }
 
 .industry-card:hover {
     background: var(--navy-text);
-    transform: translateY(-5px);
-    box-shadow: 0 12px 25px rgba(13, 43, 82, 0.1);
+    transform: translateY(-3px);
 }
 
 .industry-card:hover i, .industry-card:hover h5 {
     color: #ffffff !important;
 }
 
-/* ==========================
-   Why Us & Components
-========================== */
+/* Remaining Components Alignment */
 .why-list {
     list-style: none;
     padding: 0;
 }
 .why-list li {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 10px;
+    font-size: 14.5px;
     display: flex;
     align-items: center;
 }
 .why-list i {
     color: var(--primary-gold);
-    margin-right: 12px;
-    font-size: 18px;
+    margin-right: 10px;
 }
 .why-box {
     background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(13, 43, 82, 0.03);
+    padding: 25px;
+    border-radius: 12px;
     border-left: 4px solid var(--primary-gold);
 }
 
 .stats-section {
     background: var(--navy-text);
-    padding: 60px 0;
+    padding: 35px 0;
     color: #ffffff;
 }
 .stat-box h2 {
     color: var(--primary-gold);
     font-weight: 700;
-    font-size: 38px;
-    margin-bottom: 5px;
+    font-size: 30px;
+    margin: 0;
 }
 .stat-box p {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 0;
     color: rgba(255,255,255,0.7);
 }
 
 .contact-preview {
     background: var(--navy-deep);
     color: #ffffff;
-    padding: 80px 0;
+    padding: 50px 0;
 }
 
-/* ==========================
-   Footer
-========================== */
 .footer {
     background: #040f21;
     color: #cbd5e1;
-    padding: 70px 0 30px;
+    padding: 50px 0 20px;
 }
 .footer h5 {
     color: #ffffff;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-.footer-links {
-    list-style: none;
-    padding: 0;
+    margin-bottom: 12px;
 }
 .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 .footer-links a, .footer a {
     color: #cbd5e1;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 .footer-links a:hover, .footer a:hover {
     color: var(--primary-gold);
 }
 .footer hr {
+    margin: 20px 0;
     border-color: rgba(255, 255, 255, 0.08);
 }
