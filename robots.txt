@@ -1,0 +1,26 @@
+# ==========================================
+# Robots.txt for SB Nexa Global (2026)
+# ==========================================
+
+# Target all search engine crawlers
+User-agent: *
+
+# Allow crawling of the entire public portfolio
+Allow: /
+Allow: /index.html
+Allow: /about.html
+Allow: /services.html
+Allow: /industries.html
+Allow: /leadership.html
+Allow: /insights.html
+Allow: /careers.html
+Allow: /contact.html
+
+# Prevent search engines from indexing raw system/style assets individually
+Disallow: /css/
+Disallow: /js/
+Disallow: /README.md
+Disallow: /LICENSE
+
+# Direct crawlers to your official sitemap to speed up indexing of new insights
+Sitemap: https://sbnexaglobal.com/sitemap.xml
