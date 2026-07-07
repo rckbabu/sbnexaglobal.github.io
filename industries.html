@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Industries We Serve | SB Nexa Global</title>
+    <meta name="description" content="Discover the market sectors we advance through strategic IT consulting, delivery governance, and customized digital transformation frameworks.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .industries-wrapper {
+            padding: 100px 0 50px 0;
+            background: #ffffff;
+        }
+        .sectors-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 35px;
+        }
+        .premium-sector-card {
+            background: #f8fafc;
+            padding: 35px 20px;
+            text-align: center;
+            border-radius: 12px;
+            border: 1px solid rgba(13, 43, 82, 0.04);
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        .premium-sector-card i {
+            font-size: 32px;
+            color: var(--primary-gold);
+            margin-bottom: 16px;
+            transition: color 0.25s ease;
+        }
+        .premium-sector-card h4 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--navy-text);
+            margin: 0;
+            transition: color 0.25s ease;
+        }
+        .premium-sector-card:hover {
+            background: var(--navy-text);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(13, 43, 82, 0.1);
+            border-color: var(--navy-text);
+        }
+        .premium-sector-card:hover i, 
+        .premium-sector-card:hover h4 {
+            color: #ffffff !important;
+        }
+        @media(max-width: 991px) {
+            .sectors-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media(max-width: 576px) {
+            .sectors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="SB Nexa Global Logo">
+                <div class="brand-text-block">
+                    <span class="brand-title">SB Nexa Global</span>
+                    <span class="brand-tagline">Connecting Solutions. Creating Value.</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Industries Main Content -->
+    <section class="industries-wrapper">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="section-tagline">MARKET SECTORS</span>
+                    <h1 class="hero-title" style="font-size: 42px; margin-bottom: 12px;">Sectors We Advance.<br><span>Value We Deliver.</span></h1>
+                    <p class="hero-lead" style="font-size: 17px; margin-bottom: 0; max-width: 750px;">
+                        We adapt our technical strategy and compliance consulting blueprints across distinct institutional ecosystems to build highly resilient, scale-ready operational structures.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Balanced 4-Column Core Grid Layout -->
+            <div class="sectors-grid">
+                
+                <!-- 1. Banking -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-building-columns"></i>
+                    <h4>Banking</h4>
+                </div>
+
+                <!-- 2. Financial Services -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h4>Financial Services</h4>
+                </div>
+
+                <!-- 3. Healthcare -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                    <h4>Healthcare</h4>
+                </div>
+
+                <!-- 4. Manufacturing -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-industry"></i>
+                    <h4>Manufacturing</h4>
+                </div>
+
+                <!-- 5. Retail -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h4>Retail</h4>
+                </div>
+
+                <!-- 6. Government -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h4>Government</h4>
+                </div>
+
+                <!-- 7. Startups & SMEs -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-rocket"></i>
+                    <h4>Startups &amp; SMEs</h4>
+                </div>
+
+                <!-- 8. Technology -->
+                <div class="premium-sector-card">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h4>Technology</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <p class="fw-bold text-white mb-1" style="font-size: 16px;">SB Nexa Global</p>
+                    <p class="small text-muted mb-0">Helping organizations accelerate growth globally through technology management, engineering governance, and delivery execution.</p>
+                </div>
+                <div class="col-lg-4 ps-lg-5">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links" style="font-size: 13.5px;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" style="font-size: 13.5px;">
+                    <h5>Corporate Office</h5>
+                    <p class="mb-1 text-white-50">Bengaluru, Karnataka, India</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2 text-warning"></i><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
+                    <p><i class="fa-brands fa-linkedin me-2 text-warning"></i><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">SB Nexa Global</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center text-muted small" style="font-size: 11.5px;">
+                <p class="mb-0">&copy; 2026 SB Nexa Global. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
 
