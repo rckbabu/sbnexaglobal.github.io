@@ -14,15 +14,23 @@
     
     <style>
         .contact-wrapper {
-            padding: 140px 0 80px 0;
+            padding: 120px 0 60px 0;
             background: #ffffff;
+            min-height: calc(100vh - 280px);
+            display: flex;
+            align-items: center;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
         }
         .info-card {
             background: #f8fafc;
-            padding: 35px;
-            border-radius: 14px;
+            padding: 24px 30px;
+            border-radius: 12px;
             border: 1px solid rgba(0,0,0,0.04);
-            margin-bottom: 24px;
             display: flex;
             align-items: center;
             transition: transform 0.2s ease, border-color 0.2s ease;
@@ -32,35 +40,43 @@
             border-color: #f4b400;
         }
         .info-card .icon-box {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background: rgba(13, 43, 82, 0.05);
             border-radius: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-right: 25px;
+            margin-right: 20px;
             flex-shrink: 0;
         }
         .info-card i {
-            font-size: 24px;
+            font-size: 20px;
             color: #0d2b52;
         }
         .info-card h5 {
-            font-size: 18px;
+            font-size: 16px;
             font-weight: 600;
             color: #0d2b52;
-            margin-bottom: 6px;
+            margin-bottom: 4px;
         }
         .info-card p, .info-card a {
             color: #64748b;
-            font-size: 15px;
+            font-size: 14px;
             text-decoration: none;
             margin: 0;
         }
         .info-card a:hover {
             color: #f4b400;
             text-decoration: underline;
+        }
+        @media(max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .contact-wrapper {
+                padding-top: 100px;
+            }
         }
     </style>
 </head>
@@ -95,50 +111,54 @@
         <div class="container">
             <div class="row justify-content-center">
                 
-                <div class="col-lg-8 text-center mb-5">
+                <div class="col-lg-10 text-center">
                     <span class="section-tagline">GET IN TOUCH</span>
-                    <h2 class="section-title">Corporate Channels</h2>
-                    <p class="text-muted">Have an upcoming enterprise digital initiative or board advisory requirement? Reach out directly via our verified communication networks below. Our executive team will respond promptly.</p>
-                </div>
-
-                <div class="col-lg-8">
+                    <h2 class="section-title mb-2">Connect With Us</h2>
+                    <p class="text-muted max-w-2xl mx-auto mb-4" style="max-width: 700px; font-size: 15px;">
+                        Let's collaborate to strengthen your governance frameworks and modernize your technology solutions. 
+                        Reach out directly via our verified communication networks below. Our executive team will respond promptly.
+                    </p>
                     
-                    <!-- Corporate Base Location -->
-                    <div class="info-card">
-                        <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <h5>Our Corporate Base</h5>
-                            <p>Bengaluru, Karnataka, India</p>
+                    <!-- 2x2 Clean Space Grid -->
+                    <div class="contact-grid text-start">
+                        
+                        <!-- Location -->
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <h5>Our Corporate Base</h5>
+                                <p>Bengaluru, Karnataka, India</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Direct Smartphone Connection -->
-                    <div class="info-card">
-                        <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-                        <div>
-                            <h5>Call </h5>
-                            <p><a href="tel:+919019582713">+91 9019582713</a></p>
+                        <!-- Phone -->
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <h5>Call or WhatsApp</h5>
+                                <p><a href="tel:+919019582713">+91 9019582713</a></p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Business Email Link -->
-                    <div class="info-card">
-                        <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-                        <div>
-                            <h5>Direct Inquiry Email</h5>
-                            <p><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
+                        <!-- Email -->
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <h5>Direct Inquiry Email</h5>
+                                <p><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Verified LinkedIn Link -->
-                    <div class="info-card">
-                        <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
-                        <div>
-                            <h5>Official Corporate LinkedIn</h5>
-                            <p><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">linkedin.com/company/sbnexaglobal</a></p>
+                        <!-- LinkedIn -->
+                        <div class="info-card">
+                            <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <h5>Official Corporate LinkedIn</h5>
+                                <p><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">linkedin.com/company/sbnexaglobal</a></p>
+                            </div>
                         </div>
-                    </div>
 
+                    </div>
                 </div>
 
             </div>
