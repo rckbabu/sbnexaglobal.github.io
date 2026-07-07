@@ -1,5 +1,5 @@
 /* ==========================================
-   SB Nexa Global - Luxury Executive Light Theme
+   SB Nexa Global - Compact Executive Layout
 ========================================== */
 
 :root {
@@ -27,42 +27,53 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--text-dark);
     background: var(--bg-clean);
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* ==========================
-   Navigation (Elegant & Fills Navbar Space)
+   Navigation Header Customization
 ========================== */
 .navbar {
     background: #ffffff;
-    transition: all 0.3s ease;
-    padding: 18px 0;
-    border-bottom: 2px solid rgba(13, 43, 82, 0.05);
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(13, 43, 82, 0.08);
     z-index: 1030;
 }
 
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: 15px;
     text-decoration: none;
 }
 
 .navbar-brand img {
-    height: 52px;
+    height: 46px;
     object-fit: contain;
+    margin-right: 12px;
 }
 
-/* Creative addition to break the empty navbar space gap */
-.brand-divider-text {
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--text-light);
-    font-weight: 600;
+.brand-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-left: 1px solid #cbd5e1;
-    padding-left: 15px;
-    display: inline-block;
+    padding-left: 12px;
+}
+
+.brand-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy-text);
+    line-height: 1.2;
+}
+
+.brand-tagline {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .navbar-nav {
@@ -70,67 +81,36 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 .nav-link {
     color: var(--navy-text) !important;
     font-weight: 600;
-    font-size: 15px;
-    padding: 8px 16px !important;
-    position: relative;
-    transition: all 0.25s ease;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    left: 16px;
-    bottom: -2px;
-    width: 0;
-    height: 3px;
-    background: var(--primary-gold);
-    transition: width 0.25s ease;
+    font-size: 14.5px;
+    padding: 6px 12px !important;
 }
 
 .nav-link:hover, .nav-link.active {
     color: var(--primary-gold) !important;
 }
 
-.nav-link:hover::after, .nav-link.active::after {
-    width: calc(100% - 32px);
-}
-
 /* ==========================
-   Hero Section (Premium Creative Closure)
+   Ultra-Tight Hero Block System
 ========================== */
 .hero {
-    height: calc(100vh - 90px); /* Fits screen view exactly */
-    min-height: 550px;
-    display: flex;
-    align-items: center;
-    /* High-end design gradient mesh to texture the ugly white empty zones */
-    background: 
-        radial-gradient(circle at 80% 30%, rgba(244, 180, 0, 0.12) 0%, transparent 55%),
-        radial-gradient(circle at 20% 80%, rgba(13, 43, 82, 0.04) 0%, transparent 40%),
-        linear-gradient(135deg, #fdfdfd 0%, #f1f5f9 100%);
+    background: linear-gradient(135deg, #fdfdfd 0%, #f1f5f9 100%);
     color: var(--navy-text);
-    padding: 0;
-    overflow: hidden;
-    position: relative;
-}
-
-.hero-content-block {
-    padding-top: 10px;
+    padding: 100px 0 35px 0; /* Tight spacing directly beneath menu */
 }
 
 .hero-title {
-    font-size: 58px; /* Large, bold, eye-catching title text */
+    font-size: 48px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.2;
     color: var(--navy-text);
-    margin-bottom: 20px;
-    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
 }
 
 .hero-title span {
@@ -138,47 +118,22 @@ body {
 }
 
 .hero-lead {
-    font-size: 20px; /* Strong descriptive font size */
+    font-size: 18px;
     color: #334155;
-    max-width: 600px;
-    margin-bottom: 35px;
-    line-height: 1.6;
-    font-weight: 400;
-}
-
-/* High-contrast modern showcase container card */
-.hero-showcase {
-    background: #ffffff;
-    padding: 50px 40px;
-    border-radius: 24px;
-    box-shadow: 0 25px 60px rgba(13, 43, 82, 0.08);
-    border: 1px solid rgba(13, 43, 82, 0.05);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.3s ease;
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="%230d2b52" fill-opacity="0.03"/></svg>');
-}
-
-.hero-showcase:hover {
-    transform: translateY(-4px);
-}
-
-.hero-showcase img {
-    max-height: 190px;
-    width: auto;
-    object-fit: contain;
+    max-width: 750px;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 /* ==========================
-   Buttons
+   Buttons Framework
 ========================== */
 .btn {
-    padding: 14px 36px;
-    border-radius: 50px;
+    padding: 10px 28px;
+    border-radius: 4px;
     font-weight: 600;
-    font-size: 15px;
-    transition: all 0.25s ease;
+    font-size: 14px;
+    transition: all 0.2s ease;
 }
 
 .btn-primary {
@@ -189,12 +144,10 @@ body {
 
 .btn-primary:hover {
     background: var(--navy-deep);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(13, 43, 82, 0.2);
 }
 
 .btn-outline-light {
-    border: 2px solid var(--navy-text);
+    border: 1px solid var(--navy-text);
     color: var(--navy-text);
     background: transparent;
 }
@@ -202,82 +155,73 @@ body {
 .btn-outline-light:hover {
     background: var(--navy-text);
     color: #ffffff;
-    transform: translateY(-2px);
 }
 
 /* ==========================
-   Standard Subsections Core
+   Globally Shrinking Section Gaps
 ========================== */
-.about-home, .founder-section {
-    padding: 80px 0;
-    background: var(--bg-clean);
+.about-home, .services-home, .industries-home, .why-us, .stats-section, .founder-section, .contact-preview {
+    padding: 35px 0; /* All major section gaps completely compressed */
 }
 
-.services-home, .why-us, .industries-home {
-    padding: 80px 0;
-    background: var(--bg-light-accent);
-}
+.about-home { background: var(--bg-clean); }
+.services-home { background: var(--bg-light-accent); }
+.industries-home { background: var(--bg-clean); }
+.why-us { background: var(--bg-light-accent); }
+.founder-section { background: var(--bg-clean); }
 
 .section-tagline {
-    display: inline-block;
-    font-size: 12px;
+    display: block;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--primary-gold);
-    margin-bottom: 12px;
+    margin-bottom: 4px;
     text-transform: uppercase;
 }
 
 .section-title {
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--navy-text);
-    margin-bottom: 20px;
-}
-
-.service-card {
-    background: #ffffff;
-    padding: 40px 30px;
-    border-radius: 16px;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(13, 43, 82, 0.04);
-    box-shadow: 0 10px 30px rgba(13, 43, 82, 0.02);
-    height: 100%;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--primary-gold);
-    box-shadow: 0 20px 40px rgba(13, 43, 82, 0.08);
-}
-
-.service-card i {
-    font-size: 32px;
-    color: var(--primary-gold);
-    margin-bottom: 20px;
-}
-
-.service-card h4 {
-    font-size: 20px;
-    color: var(--navy-text);
-    font-weight: 600;
     margin-bottom: 12px;
 }
 
-.service-card p {
-    font-size: 15px;
-    color: #4a5568;
+/* Service Presentation Cards */
+.service-card {
+    background: #ffffff;
+    padding: 24px 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(13, 43, 82, 0.05);
+    height: 100%;
 }
 
-/* Industries System Grid */
+.service-card i {
+    font-size: 24px;
+    color: var(--primary-gold);
+    margin-bottom: 10px;
+}
+
+.service-card h4 {
+    font-size: 17px;
+    color: var(--navy-text);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #4a5568;
+    margin: 0;
+}
+
+/* Industry Display Cards */
 .industry-card {
     background: #ffffff;
-    padding: 35px 25px;
+    padding: 20px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     border: 1px solid rgba(13, 43, 82, 0.05);
-    box-shadow: 0 5px 20px rgba(13, 43, 82, 0.01);
-    transition: all 0.3s ease;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -286,108 +230,93 @@ body {
 }
 
 .industry-card i {
-    font-size: 32px;
+    font-size: 24px;
     color: var(--primary-gold);
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 
 .industry-card h5 {
-    font-size: 16px;
+    font-size: 14.5px;
     font-weight: 600;
     color: var(--navy-text);
     margin: 0;
 }
 
-.industry-card:hover {
-    background: var(--navy-text);
-    transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(13, 43, 82, 0.12);
-}
-
-.industry-card:hover i, .industry-card:hover h5 {
-    color: #ffffff !important;
-}
-
-/* Elements Structural Blueprints */
+/* Why Choose Us Modules */
 .why-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 .why-list li {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 8px;
+    font-size: 15px;
     display: flex;
     align-items: center;
 }
 .why-list i {
     color: var(--primary-gold);
-    margin-right: 12px;
-    font-size: 18px;
+    margin-right: 10px;
 }
 .why-box {
     background: #ffffff;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 10px 35px rgba(13, 43, 82, 0.04);
-    border-left: 5px solid var(--primary-gold);
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-gold);
 }
 
+/* Analytics Stats Bar */
 .stats-section {
     background: var(--navy-text);
-    padding: 60px 0;
     color: #ffffff;
 }
 .stat-box h2 {
     color: var(--primary-gold);
     font-weight: 700;
-    font-size: 42px;
-    margin-bottom: 5px;
+    font-size: 32px;
+    margin-bottom: 2px;
 }
 .stat-box p {
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 12px;
+    margin: 0;
     color: rgba(255,255,255,0.7);
 }
 
+/* Contact CTA Block */
 .contact-preview {
     background: var(--navy-deep);
     color: #ffffff;
-    padding: 80px 0;
+    text-align: center;
 }
 
+/* Footer layout rules */
 .footer {
     background: #040f21;
     color: #cbd5e1;
-    padding: 80px 0 30px;
+    padding: 40px 0 20px;
 }
 .footer h5 {
     color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     font-weight: 600;
+    font-size: 15px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
 }
 .footer-links li {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
 }
 .footer-links a, .footer a {
     color: #cbd5e1;
     text-decoration: none;
-    transition: color 0.2s ease;
 }
 .footer-links a:hover, .footer a:hover {
     color: var(--primary-gold);
 }
 .footer hr {
-    margin: 30px 0;
+    margin: 20px 0;
     border-color: rgba(255, 255, 255, 0.08);
 }
 
-@media (max-width: 991px) {
-    .hero {
-        height: auto;
-        padding: 60px 0;
-    }
-    .hero-title {
-        font-size: 42px;
-    }
-}
