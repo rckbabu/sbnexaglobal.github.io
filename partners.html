@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clients &amp; Partners | SB Nexa Global</title>
+    <meta name="description" content="Explore institutional testimonials, corporate partner ecosystems, and client success tracking from SB Nexa Global.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .partners-wrapper {
+            padding: 120px 0 60px 0;
+            background: #ffffff;
+            min-height: calc(100vh - 280px);
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .testimonial-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            border: 1px solid rgba(13, 43, 82, 0.04);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            transition: all 0.25s ease;
+            height: 100%;
+        }
+        .testimonial-card:hover {
+            background: #ffffff;
+            transform: translateY(-4px);
+            border-color: var(--primary-gold);
+            box-shadow: 0 15px 30px rgba(13, 43, 82, 0.06);
+        }
+        .quote-icon {
+            font-size: 38px;
+            color: rgba(244, 180, 0, 0.15);
+            position: absolute;
+            top: 25px;
+            left: 25px;
+        }
+        .testimonial-text {
+            font-size: 15px;
+            color: #4a5568;
+            line-height: 1.6;
+            font-style: italic;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 25px;
+        }
+        .client-profile {
+            border-top: 1px solid rgba(0, 0, 0, 0.06);
+            padding-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .client-info h5 {
+            font-size: 15.5px;
+            font-weight: 700;
+            color: var(--navy-text);
+            margin-bottom: 3px;
+        }
+        .client-info p {
+            font-size: 13px;
+            color: #64748b;
+            margin: 0;
+            font-weight: 500;
+        }
+        @media(max-width: 991px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="SB Nexa Global Logo">
+                <div class="brand-text-block">
+                    <span class="brand-title">SB Nexa Global</span>
+                    <span class="brand-tagline">Connecting Solutions. Creating Value.</span>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="leadership.html">Leadership</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="partners.html">Partners</a></li>
+                    <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Partners Content Section -->
+    <section class="partners-wrapper">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-lg-8">
+                    <span class="section-tagline">TRUSTED ALIGNMENTS</span>
+                    <h1 class="hero-title" style="font-size: 42px; margin-bottom: 12px;">Our Clients &amp;<br><span>Strategic Partners.</span></h1>
+                    <p class="hero-lead" style="font-size: 17px; margin-bottom: 0; max-width: 750px;">
+                        We gauge our success strictly through the technical acceleration, delivery governance, and bottom-line operational efficiency we create for our institutional partners.
+                    </p>
+                </div>
+            </div>
+
+            <!-- B2B Testimonials Layout -->
+            <div class="testimonial-grid">
+                
+                <!-- Testimonial 1: Edapco Oy -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">
+                        "SB Nexa Global demonstrates exceptional competence and deep structural authority across enterprise computing landscapes, particularly within Microsoft Azure and Entra ID ecosystems. The advisory team combines an accommodating, highly professional delivery style with a relentless focus on engineering workable solutions for complex operational bottlenecks. Beyond pure information technology, SB Nexa Global brings invaluable cross-functional industry governance and compliance expertise to the table."
+                    </p>
+                    <div class="client-profile">
+                        <div class="client-info">
+                            <h5>Founder &amp; CEO</h5>
+                            <p>Edapco Oy — Helsinki, Finland</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2: Bhurama Agri -->
+                <div class="testimonial-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="testimonial-text">
+                        "SB Nexa Global has been instrumental in modernizing our core technical foundation. They seamlessly executed our complete cloud environment architecture setup and managed the mission-critical installation of our enterprise software. Beyond smooth technical delivery, their engineering execution directly optimized our cloud infrastructure pipelines, resulting in a substantial reduction in ongoing operational costs. For any enterprise seeking scalable technology frameworks coupled with distinct fiscal efficiency, SB Nexa Global is a premier partner."
+                    </p>
+                    <div class="client-profile">
+                        <div class="client-info">
+                            <h5>Founder</h5>
+                            <p>Bhurama Agri (Linika Ventures) — Bangalore, India</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer System -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <p class="fw-bold text-white mb-1" style="font-size: 16px;">SB Nexa Global</p>
+                    <p class="small text-muted mb-0">Helping organizations accelerate growth globally through technology management, engineering governance, and delivery execution.</p>
+                </div>
+                <div class="col-lg-4 ps-lg-5">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links" style="font-size: 13.5px; list-style: none; padding: 0;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4" style="font-size: 13.5px;">
+                    <h5>Corporate Office</h5>
+                    <p class="mb-1 text-white-50">Bengaluru, Karnataka, India</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2 text-warning"></i><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
+                    <p><i class="fa-brands fa-linkedin me-2 text-warning"></i><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">SB Nexa Global</a></p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center text-muted small" style="font-size: 11.5px;">
+                <p class="mb-0">&copy; 2026 SB Nexa Global. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Corporate WhatsApp Widget -->
+    <a href="https://wa.me/919901971201?text=Hi%20Suresh,%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20your%20consulting%20services." 
+       class="whatsapp-chat-widget" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       title="Chat with us on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
