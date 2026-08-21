@@ -77,6 +77,16 @@
             margin: 0;
             font-weight: 500;
         }
+        .partner-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: rgba(100, 116, 139, 0.4);
+            transition: color 0.2s ease, text-decoration-color 0.2s ease;
+        }
+        .partner-link:hover {
+            color: #0a66c2;
+            text-decoration-color: #0a66c2;
+        }
         @media(max-width: 991px) {
             .testimonial-grid {
                 grid-template-columns: 1fr;
@@ -141,8 +151,8 @@
                     </p>
                     <div class="client-profile">
                         <div class="client-info">
-                            <h5>Founder &amp; CEO</h5>
-                            <p>Edapco Oy — Helsinki, Finland</p>
+                            <h5>Mr. Tapani Ranta</h5>
+                            <p>Founder &amp; CEO, <a href="https://www.edapco.fi" target="_blank" rel="noopener noreferrer" class="partner-link">Edapco Oy</a> — Helsinki, Finland</p>
                         </div>
                     </div>
                 </div>
@@ -187,7 +197,7 @@
                     <h5>Corporate Office</h5>
                     <p class="mb-1 text-white-50">Bengaluru, Karnataka, India</p>
                     <p class="mb-1"><i class="fa-solid fa-envelope me-2 text-warning"></i><a href="mailto:info@sbnexaglobal.com">info@sbnexaglobal.com</a></p>
-                    <p><i class="fa-brands fa-linkedin me-2 text-warning"></i><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank">SB Nexa Global</a></p>
+                    <p><i class="fa-brands fa-linkedin me-2 text-warning"></i><a href="https://www.linkedin.com/company/sbnexaglobal" target="_blank" rel="noopener noreferrer">SB Nexa Global</a></p>
                 </div>
             </div>
             <hr>
@@ -198,7 +208,7 @@
     </footer>
 
     <!-- Floating Corporate WhatsApp Widget -->
-  <a href="https://wa.me/919901971201?text=Hi%20Suresh,%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20your%20consulting%20services." 
+    <a href="https://wa.me/919901971201?text=Hi%20Suresh,%20I%20visited%20your%20website%20and%20would%20like%20to%20discuss%20your%20consulting%20services." 
        class="whatsapp-chat-widget" 
        target="_blank" 
        rel="noopener noreferrer" 
