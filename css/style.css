@@ -390,19 +390,27 @@ body {
 }
 
 /* ==========================================================================
-   Top News Ticker Bar (Homepage Announcement)
+   Top News Ticker & Fixed Navigation Alignment
    ========================================================================== */
 .top-news-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 38px;
     background: #0a192f;
     color: #e2e8f0;
     font-size: 13px;
-    height: 38px;
     display: flex;
     align-items: center;
     overflow: hidden;
-    position: relative;
     border-bottom: 1px solid rgba(244, 180, 0, 0.25);
-    z-index: 1031;
+    z-index: 1035;
+}
+
+/* Offset the navbar so it sits directly beneath the news bar */
+.navbar.fixed-top {
+    top: 38px !important;
 }
 
 .news-label {
@@ -460,4 +468,3 @@ body {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-100%, 0, 0); }
 }
-
