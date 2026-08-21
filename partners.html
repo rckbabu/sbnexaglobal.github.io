@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Clients &amp; Partners | SB Nexa Global</title>
-    <meta name="description" content="Explore institutional testimonials, corporate partner ecosystems, and client success tracking from SB Nexa Global.">
+    <meta name="description" content="Explore strategic technology alliances, RightMaint™ partnership, and institutional testimonials from SB Nexa Global.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,11 +18,60 @@
             background: #ffffff;
             min-height: calc(100vh - 280px);
         }
+        
+        /* Strategic Partnership Section */
+        .strategic-alliance-card {
+            background: linear-gradient(135deg, #0d2b52 0%, #102c57 100%);
+            border-radius: 14px;
+            padding: 35px 40px;
+            color: #ffffff;
+            margin-top: 35px;
+            margin-bottom: 50px;
+            box-shadow: 0 12px 30px rgba(16, 44, 87, 0.15);
+            border-left: 5px solid #f4b400;
+        }
+        .alliance-badge {
+            background: rgba(244, 180, 0, 0.2);
+            color: #f4b400;
+            font-size: 11.5px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .alliance-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .alliance-desc {
+            font-size: 14.5px;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .partner-ext-link {
+            color: #f4b400;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        .partner-ext-link:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+
+        /* Testimonials Grid */
         .testimonial-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 20px;
         }
         .testimonial-card {
             background: #f8fafc;
@@ -112,6 +161,9 @@
                 grid-template-columns: 1fr;
                 gap: 24px;
             }
+            .strategic-alliance-card {
+                padding: 25px;
+            }
         }
     </style>
 </head>
@@ -152,12 +204,39 @@
             
             <div class="row">
                 <div class="col-lg-8">
-                    <span class="section-tagline">TRUSTED ALIGNMENTS</span>
-                    <h1 class="hero-title" style="font-size: 42px; margin-bottom: 12px;">Our Clients &amp;<br><span>Strategic Partners.</span></h1>
+                    <span class="section-tagline">GLOBAL COLLABORATION</span>
+                    <h1 class="hero-title" style="font-size: 42px; margin-bottom: 12px;">Strategic Alliances &amp;<br><span>Client Ecosystems.</span></h1>
                     <p class="hero-lead" style="font-size: 17px; margin-bottom: 0; max-width: 750px;">
-                        We gauge our success strictly through the technical acceleration, delivery governance, and bottom-line operational efficiency we create for our institutional partners.
+                        We accelerate enterprise value through dedicated product representation, custom software engineering, and strategic delivery governance across global markets.
                     </p>
                 </div>
+            </div>
+
+            <!-- Strategic Alliance Spotlight: RightMaint™ / Edapco Oy -->
+            <div class="strategic-alliance-card">
+                <div class="row align-items-center">
+                    <div class="col-lg-9">
+                        <span class="alliance-badge"><i class="fa-solid fa-handshake me-1"></i> Strategic Product &amp; Market Representation</span>
+                        <h3 class="alliance-title">RightMaint™ Cloud System (Edapco Oy)</h3>
+                        <p class="alliance-desc">
+                            SB Nexa Global is the authorized partner and regional representative for <strong>RightMaint™</strong> across <strong>Asia and Australia</strong>. In collaboration with Edapco Oy (Helsinki, Finland), we deliver end-to-end software development, integration engineering, QA verification, and multi-tier customer support for RightMaint's industrial maintenance platform.
+                        </p>
+                        <a href="https://www.edapco.fi" target="_blank" rel="noopener noreferrer" class="partner-ext-link">
+                            Explore Edapco Oy &amp; RightMaint™ <i class="fa-solid fa-arrow-up-right-from-square ms-1" style="font-size: 12px;"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 text-lg-end mt-3 mt-lg-0">
+                        <span class="badge bg-light text-dark px-3 py-2 fw-semibold" style="font-size: 13px;">
+                            <i class="fa-solid fa-cloud-gear me-1 text-primary"></i> Technology &amp; Sales Partner
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Heading -->
+            <div class="mb-2">
+                <span class="section-tagline">EXECUTIVE ENDORSEMENTS</span>
+                <h3 class="fw-bold" style="font-size: 24px; color: #102c57;">Institutional Testimonials</h3>
             </div>
 
             <!-- B2B Testimonials Layout -->
