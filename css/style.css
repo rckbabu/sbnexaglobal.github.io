@@ -388,3 +388,76 @@ body {
         box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
     }
 }
+
+/* ==========================================================================
+   Top News Ticker Bar (Homepage Announcement)
+   ========================================================================== */
+.top-news-bar {
+    background: #0a192f;
+    color: #e2e8f0;
+    font-size: 13px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(244, 180, 0, 0.25);
+    z-index: 1031;
+}
+
+.news-label {
+    background: #f4b400;
+    color: #0d2b52;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 0 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 2;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.ticker-wrap {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: tickerAnim 28s linear infinite;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 20px;
+    color: #f8fafc;
+}
+
+.ticker-item a {
+    color: #f4b400;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-left: 6px;
+}
+
+.ticker-item a:hover {
+    color: #ffffff;
+}
+
+@keyframes tickerAnim {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
