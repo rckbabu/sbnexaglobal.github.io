@@ -77,10 +77,30 @@
             margin: 0;
             font-weight: 500;
         }
-        .partner-link {
-            color: inherit;
+        .partner-name-link {
+            color: var(--navy-text);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        .partner-name-link:hover {
+            color: #0a66c2;
             text-decoration: underline;
-            text-decoration-color: rgba(100, 116, 139, 0.4);
+        }
+        .linkedin-badge {
+            color: #0a66c2;
+            font-size: 1rem;
+            margin-left: 6px;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+        .linkedin-badge:hover {
+            color: #004182;
+        }
+        .partner-link {
+            color: #102c57;
+            font-weight: 700;
+            text-decoration: underline;
+            text-decoration-color: rgba(16, 44, 87, 0.3);
             transition: color 0.2s ease, text-decoration-color 0.2s ease;
         }
         .partner-link:hover {
@@ -151,8 +171,15 @@
                     </p>
                     <div class="client-profile">
                         <div class="client-info">
-                            <h5>Tapani Ranta</h5>
-                            <p>Founder &amp; CEO, <a href="https://www.edapco.fi" target="_blank" rel="noopener noreferrer" class="partner-link"><B>Edapco Oy</B></a> — Helsinki, Finland</p>
+                            <h5>
+                                <a href="https://www.linkedin.com/in/tapani-ranta-7a94907" target="_blank" rel="noopener noreferrer" class="partner-name-link">
+                                    Tapani Ranta
+                                </a>
+                                <a href="https://www.linkedin.com/in/tapani-ranta-7a94907" target="_blank" rel="noopener noreferrer" class="linkedin-badge" title="View LinkedIn Profile">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </h5>
+                            <p>Founder &amp; CEO, <a href="https://www.edapco.fi" target="_blank" rel="noopener noreferrer" class="partner-link">Edapco Oy</a> — Helsinki, Finland</p>
                         </div>
                     </div>
                 </div>
