@@ -410,7 +410,7 @@ body {
 
 /* Offset the navbar so it sits directly beneath the news bar */
 .navbar.fixed-top {
-    top: 38px !important;
+    top: 0;
 }
 
 .news-label {
